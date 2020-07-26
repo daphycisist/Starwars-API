@@ -5,25 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coustard|Roboto+Slab|PT+Sans+Caption|Changa">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
   </head>
   <body>
-    <section>
-      <header class="header">
+
+    <header class="header">
         <img src="./img/TheMandalorian-Logo.jpg" alt="">
-      </header>
-      <h4>The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.
-      
-      After the stories of Jango and Boba Fett, another warrior emerges in the Star Wars universe. The Mandalorian is set
-      after the fall of the Empire and before the emergence of the First Order. We follow the travails of a lone gunfighter in
-      the outer reaches of the galaxy far from the authority of the New Republic.</h4>
-      <h1>Authors</h1>
-      <div id="actors"></div>
+    </header>
+    <section class="container">
+      <div class="header-content">
+        <p class="prolouge">The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of
+          the New Republic.
+          After the stories of Jango and Boba Fett, another warrior emerges in the Star Wars universe. The Mandalorian is set
+          after the fall of the Empire and before the emergence of the First Order. We follow the travails of a lone gunfighter
+          in
+          the outer reaches of the galaxy far from the authority of the New Republic.
+        </p>
+
+        <video controls >
+          <source src="./img/The Mandalorian clip.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <section class="content container character">
+      <h1>Characters</h1>
+      <div id="actors" class="actors"></div>
       <div class="actor-content">
         <article class="display-actor-info"></article>
       </div>
     </section>
+      
+    
     
     <script type="module" src="./js/script.js"></script>
   </body>
