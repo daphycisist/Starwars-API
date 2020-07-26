@@ -34,6 +34,10 @@ fetch(url)
       appendActor(person, name);
 
       name.onclick = () => {
+        let actor_content = document.querySelector('.actor-content')
+        actor_content.style.display = 'block';
+
+
         let article = document.querySelector('.display-actor-info')
         article.innerHTML = `
           <p>${actorInfo.name}</p>
@@ -42,9 +46,11 @@ fetch(url)
           <img src='${imageUrl}'></img>
           <button class="close">&times;</button>
         `  
+        // let actor_content = document.querySelector('.actor_content')
+        // actor_content.style.display = 'block';
         let closeBtn = document.querySelector('.close')
         closeBtn.onclick = (e) => {
-          article.style.display = 'none'
+          actor_content.style.display = 'none'
         } 
       }
     });
