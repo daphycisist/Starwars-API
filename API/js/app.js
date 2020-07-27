@@ -1,6 +1,6 @@
 import { User } from "../modules/User.js";
 
-let imageUrl = ['./img/Luke-Skywalker.jpg', './img/C-3PO.jpg', './img/R2-D2.jpg', './img/Darth-Vader.jpg', './img/Leia-Organa.jpg', './img/Owen-Lars.jpeg', './img/Beru-Lars.jpeg', './img/R5-D4.jpeg', './img/Biggs-Darklighter.jpeg', './img/Obi-Wan-Kenobi.jpeg'];
+let imageUrl = ['./img/Luke-Skywalker.jpg', './img/C-3PO.jpg', './img/R2-D2.jpg', './img/Darth-Vader.jpg', './img/Leia-Organa.png', './img/Owen-Lars.jpeg', './img/Beru-Lars.jpeg', './img/R5-D4.jpeg', './img/Biggs-Darklighter.jpeg', './img/Obi-Wan-Kenobi.jpeg'];
 
 const div = document.getElementById("actors"); // Get the div where we will place our authors
 const url = "https://swapi.dev/api/people/"; // API to fetch data from
