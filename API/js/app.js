@@ -1,5 +1,6 @@
 import { User } from "../modules/User.js";
 
+let imageUrl = ['./img/Luke-Skywalker.jpg', './img/C-3PO.jpg', './img/R2-D2.jpg', './img/Darth-Vader.jpg', './img/Leia-Organa.jpg', './img/Owen-Lars.jpeg', './img/Beru-Lars.jpeg', './img/R5-D4.jpeg', './img/Biggs-Darklighter.jpeg', './img/Obi-Wan-Kenobi.jpeg'];
 
 const div = document.getElementById("actors"); // Get the div where we will place our authors
 const url = "https://swapi.dev/api/people/"; // API to fetch data from
@@ -17,18 +18,11 @@ fetch(url)
       let actorsInfos = new User(actor)
       let actorInfo = actorsInfos.actorDetails
       console.log(actorInfo);
-      
-      
-      let imageUrl = ['./img/TheMandalorian-Logo.jpg', './img/stars-bcg.jpg', './img/masked-soldiers.jpg']
-
-      // let imageUrl = `https://picsum.photos/200?=${index}`; //Get random images for each actor's data
       let image = createActors("img");
       let person = createActors("div");
       person.classList.add('actor-detail')
-      // person.id = `${index + 1}`; //Give each person a unique id
       let name = createActors("p");
       name.classList.add('actor-name');
-      // name.style.cursor = 'pointer'
       image.src = imageUrl[index];
       name.innerHTML = `${actor.name}`; //Populate our HTML with each person's name
 
@@ -42,7 +36,7 @@ fetch(url)
         actor_content.style.display = 'block';
         article.innerHTML = `
         <div class="actor-img">
-          <img src='${imageUrl}'></img>
+          <img src='${image.src}'></img>
         </div>
         <div class="actor-info">
           <p>Name: ${actorInfo.name}</p>
@@ -52,7 +46,7 @@ fetch(url)
           <button class="close">&times;</button>
         `  
         let closeBtn = document.querySelector('.close')
-        closeBtn.onclick = (e) => {
+        closeBtn.onclick = () => {
           actor_content.style.display = 'none'
         } 
       }

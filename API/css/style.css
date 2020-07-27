@@ -26,7 +26,7 @@
 
 .header-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(50%, 90%));
+  grid-template-columns: 60% 40%;
   gap: 30px;
   background-color: #fff;
   justify-content: center;
@@ -100,7 +100,7 @@ section{
 
 .display-actor-info .close {
   position: absolute;
-  top: 50px;
+  top: 20px;
   right: 100px;
   font-size: 50px;
   width: 50px;
@@ -122,13 +122,17 @@ section{
 
 .actor-detail {
   padding: 30px 0;
+  height: 400px;
 }
 
 .actor-detail img {
-  height: 400px;
-  width: 90%;
+  background-size: cover;
+  height: 100%;
+  /* height: 350px; */
+  width: 100%;
   border-radius: 5px;
   box-shadow: 7px 7px 10px rgb(202, 195, 195);
+  margin-bottom: 10px;
 }
 
 .actor-detail:hover {
@@ -161,9 +165,10 @@ section{
   /* color: #fff; */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: #fff;
-  line-height: 40px;
+  line-height: 100px;
   font-size: 25px;
   font-family: changa;
+  text-align: left;
 }
