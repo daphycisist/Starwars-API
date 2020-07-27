@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 
-/* section{
-    text-align: center;
-} */
+body{
+  background-color: rgba(243, 243, 243, 0.623);
+}
 
 .container {
   padding: 0 40px;
@@ -26,18 +26,15 @@
 
 .header-content {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(50%, 90%));
-  gap: 30px;
+  grid-template-columns: 50% 50%;
   background-color: #fff;
-  justify-content: center;
 }
-
 
 .prolouge {
   font-family: Coustard;
   font-size: 15px;
-  line-height: 35px;
-  padding: 20px 0px;
+  line-height: 40px;
+  padding: 20px 10px;
 }
 
 video {
@@ -45,9 +42,73 @@ video {
   border: none;
   outline: none;
   padding-top: 20px;
-  /* padding-right: 40px; */
 }
 
+@media(max-width: 991px){
+  .header-content{
+    display: block;
+  }
+
+  video{
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 847px){
+  .header{
+    height: 300px;
+  }
+
+  .header-content{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .prolouge{
+    display: block;
+  }
+
+  video{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media(max-width: 645px){
+  .header{
+    height: 250px;
+  }
+
+  .prolouge{
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  video{ 
+    width: 100%;
+  }
+}
+
+@media(max-width: 505px){
+  .header{
+    height: 200px;
+  }
+
+  .prolouge{
+    font-size: 12px;
+  }
+
+  video{
+    width: 100%;
+  }
+}
+
+
+/* CONTENT SECTION */
 .content {
   text-align: center;
   padding: 30px 0;
@@ -100,7 +161,7 @@ section{
 
 .display-actor-info .close {
   position: absolute;
-  top: 50px;
+  top: 20px;
   right: 100px;
   font-size: 50px;
   width: 50px;
@@ -121,14 +182,18 @@ section{
 }
 
 .actor-detail {
-  padding: 30px 0;
+  padding-bottom: 30px;
+  height: 400px;
 }
 
 .actor-detail img {
-  height: 400px;
-  width: 90%;
+  background-size: cover;
+  height: 95%;
+  /* height: 350px; */
+  width: 100%;
   border-radius: 5px;
   box-shadow: 7px 7px 10px rgb(202, 195, 195);
+  /* margin-bottom: 10px; */
 }
 
 .actor-detail:hover {
@@ -161,9 +226,10 @@ section{
   /* color: #fff; */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: #fff;
-  line-height: 40px;
+  line-height: 100px;
   font-size: 25px;
   font-family: changa;
+  text-align: left;
 }
