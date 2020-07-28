@@ -12,6 +12,7 @@ body{
   padding: 0 40px;
 }
 
+/* HEADER SECTION */
 .header {
   width: 100%;
   height: 400px;
@@ -46,6 +47,7 @@ video {
   padding-top: 20px;
 }
 
+/* HEADER SECTION MEDIA QUERY */
 @media(max-width: 1400px){
   .prolouge{
     font-size: 20px;
@@ -165,10 +167,7 @@ section{
 
 .actor-content {
   display: none;
-  /* margin: 0 auto; */
   background-color: rgba(46, 47, 48, 0.959);
-  /* filter: blur(3px); */
-  /* background-image: url(../img/stars-bcg.jpg); */
   width: 100%;
   position: fixed;
   top: 0;
@@ -177,9 +176,8 @@ section{
 
 .display-actor-info {
   display: flex;
-  /* grid-template-columns: 50%; */
   width: 60%;
-  height: 70vh;
+  height: 70vh; 
   z-index: 2;
   background-color: #fff;
   margin: 0 auto;
@@ -211,19 +209,14 @@ section{
 
 .actor-detail {
   padding-bottom: 30px;
-  /* height: 400px; */
 }
 
 .actor-detail img {
   background-size: cover;
   height: 95%;
-  /* height: 350px; */
-  /* height: 350px; */
   width: 100%;
-  /* width: 350px; */
   border-radius: 5px;
   box-shadow: 7px 7px 10px rgb(202, 195, 195);
-  /* margin-bottom: 10px; */
 }
 
 .actor-detail:hover {
@@ -242,14 +235,13 @@ section{
 
 .actor-img {
   width: 50%;
-  padding-right: 20px;
 }
 
-/* .actor-img img {
-  width: 100%;
+.actor-img img{
   height: 100%;
-  border-radius: 5px 0 0 5px;
-} */
+  width: 100%;
+  display: cover;
+}
 
 .actor-info {
   display: flex;
@@ -260,22 +252,49 @@ section{
   font-size: 25px;
   font-family: changa;
   text-align: left;
+  padding: 0 40px;
 }
 
-/* @media(max-width: 1059px){
-  .actor-detail img{
-    width: 90%;
-    margin: 0 auto;
+/* CONTENT SECTION MEDIA QUERY */
+@media(max-width: 1112px){
+  .actor-info p{
+    font-size: 20px;
   }
 }
-*/
+
+@media(max-width: 991px){
+  .display-actor-info{
+    display: block;
+    width: 300px;
+    border-radius: 5px;
+  }
+
+  .actor-info p{
+    line-height: 30px;
+    font-size: 20px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .actor-img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
 @media(max-width: 729px){
   .actor-detail{
     width: 70%;
     margin: 0 auto;
     height:100%;
   }
+
+  .close{
+    top: 0px;
+  }
 }
+
 
 @media(max-width: 499px){
   .actor-detail img{
@@ -285,6 +304,7 @@ section{
   }
 } 
 
+/* FOOTER SECTION */
 footer{
   height: 300px;
   background-color: rgba(211, 211, 211, 0.459);
@@ -350,6 +370,8 @@ footer img{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
+/* FOOTER SECTION MEDIA QUERY */
 @media(max-width: 600px){
   .icons i{
     margin:0 20px;
