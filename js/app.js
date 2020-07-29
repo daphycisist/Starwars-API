@@ -67,7 +67,7 @@ fetch(url)
         </div>
           <button class="close">&times;</button>
         `  
-
+        // Add close button for modal display
         const closeBtn = document.querySelector('.close');
         closeBtn.onclick = () => {
           actor_content.style.display = 'none'
