@@ -52,7 +52,7 @@ fetch(url)
       appendActor(person, name);
       
       // Click function which populates the selected data into the modal
-      name.onclick = () => {
+      person.onclick = () => {
         const actor_content = document.querySelector('.actor-content');
         const article = document.querySelector('.display-actor-info');
         actor_content.style.display = 'block';
